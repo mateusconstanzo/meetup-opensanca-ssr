@@ -1,0 +1,41 @@
+{
+  "name": "react-ssr-express",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack -w --mode=development",
+    "build:dev": "webpack -d --watch",
+    "server": "nodemon ./build/server.js",
+    "start": "node ./build/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateus Constanzo <mateusconstanzo@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "ssr",
+    "express"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.18.9",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
